@@ -2,26 +2,32 @@ import fetch from "node-fetch";
 import { ContractTag, ITagService } from "atq-types";
 
 const SUBGRAPH_URLS: Record<string, { decentralized: string }> = {
+  // Ethereum Mainnet subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "1": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/9opY17WnEPD4REcC43yHycQthSeUMQE26wyoeMjZTLEx",
   },
+  // ZKsync subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "324": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/6dU6WwEz22YacyzbTbSa3CECCmaD8G7oQ8aw6MYd5VKU",
   },
+  // Polygon zkEVM subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "1101": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/37WmH5kBu6QQytRpMwLJMGPRbXvHgpuZsWqswW4Finc2",
   },
+  // Base subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "8453": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/2NjL7L4CmQaGJSacM43ofmH6ARf6gJoBeBaJtz9eWAQ9",
   },
+  // Arbitrum subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "42161": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/EsL7geTRcA3LaLLM9EcMFzYbUgnvf8RixoEEGErrodB3",
   },
+  // Linea subgraph, by team deployer 0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4
   "59144": {
     decentralized:
       "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/Eti2Z5zVEdARnuUzjCbv4qcimTLysAizsqH3s6cBfPjB",
